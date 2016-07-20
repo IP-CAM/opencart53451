@@ -17,7 +17,7 @@ $(document).ready(function() {
 		navigationText: ['<i class="fa fa-chevron-left fa-5x"></i>', '<i class="fa fa-chevron-right fa-5x"></i>'],
 		rewindNav : false,
 		scrollPerPage : false,
-	 
+
 		//Pagination
 		pagination : false,
 		paginationNumbers: false,
@@ -26,7 +26,7 @@ $(document).ready(function() {
 		baseClass : "owl-carousel",
 		theme : "owl-theme",
 
-	});	
+	});
 		$(".quickview").fancybox({
 			maxWidth	: 800,
 			maxHeight	: 600,
@@ -37,7 +37,7 @@ $(document).ready(function() {
 			closeClick	: false,
 			openEffect	: 'elastic',
 			closeEffect	: 'elastic',
-			
+
 		});
 	});
 </script>
@@ -75,6 +75,7 @@ $(document).ready(function() {
 										<?php } else { ?>
 										<span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
 										<?php } ?>
+										<?php include $_SERVER['DOCUMENT_ROOT'] . '/catalog/view/theme/theme533/parcelamento.php'; ?>
 										<?php if ($product['tax']) { ?>
 										<span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
 										<?php } ?>
@@ -96,7 +97,7 @@ $(document).ready(function() {
 										<?php } ?>
 										<?php } ?>
 									</div>
-										
+
 								</div>
 								<div class="col-sm-12">
 									<div class="quickview_description description">
@@ -131,6 +132,7 @@ $(document).ready(function() {
 				<?php } else { ?>
 				<span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
 				<?php } ?>
+				<?php include $_SERVER['DOCUMENT_ROOT'] . '/catalog/view/theme/theme533/parcelamento.php'; ?>
 				<?php if ($product['tax']) { ?>
 				<span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
 				<?php } ?>

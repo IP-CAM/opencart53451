@@ -32,12 +32,12 @@
 	  <?php } ?>
 	  <?php if ($categories) { ?>
 	  <h3><?php echo $text_refine; ?></h3>
-	  
+
 	  <div class="row">
 		<div >
 		  <ul class="box-subcat">
 			<?php $i=0; foreach ($categories as $category) { $i++; ?>
-				<?php 
+				<?php
 			   $perLine = 6;
 			   $last_line = "";
 							$total = count($products);
@@ -64,7 +64,7 @@
 		  </ul>
 		</div>
 	  </div>
-	  
+
 	  <?php } ?>
 	  <?php if ($products) { ?>
 		<div class="product-filter clearfix">
@@ -143,19 +143,20 @@
 				  <?php } else { ?>
 				  <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
 				  <?php } ?>
+          <?php include $_SERVER['DOCUMENT_ROOT'] . '/catalog/view/theme/theme533/parcelamento.php'; ?>
 				  <?php if ($product['tax']) { ?>
 				  <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
 				  <?php } ?>
 				</div>
 				<?php } ?>
 				</div>
-				<div class="cart-button">					
+				<div class="cart-button">
 					<span class="block-icon">
 						<button class="btn btn-icon" type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>
 						<button class="btn btn-icon" type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
 					</span>
 					<button class="btn btn-add" type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');"><span><?php echo $button_cart; ?></span></button>
-					
+
 				</div>
 			</div>
 				<div class="clear"></div>
