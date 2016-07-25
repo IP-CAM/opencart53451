@@ -48,7 +48,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="col-sm-4">	
+		<div class="col-sm-4">
 			<h5><?php echo $text_contact1; ?></h5>
 			<ul class="list-unstyled contact-block">
 				<li><?php echo $address; ?></li>
@@ -56,20 +56,36 @@
 				<li class="fax"><?php echo $fax; ?></li>
 			</ul>
 			<ul class="list-unstyled social">
-				<li><a data-toggle="tooltip" title="<?php echo $text_fb; ?>" href="https://www.facebook.com/login/"><i class="fa fa-facebook"></i></a></li>	
+				<li><a data-toggle="tooltip" title="<?php echo $text_fb; ?>" href="https://www.facebook.com/login/"><i class="fa fa-facebook"></i></a></li>
 				<li><a data-toggle="tooltip" title="<?php echo $text_twi; ?>" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
 				<li><a data-toggle="tooltip" title="<?php echo $text_rss; ?>" href=""><i class="fa fa-rss"></i></a></li>
-				
+
 			</ul>
 		</div>
 	</div>
-	
-  </div>
-	<div class="copyright">
-		<div class="container">
-			<?php echo $powered; ?><!-- [[%FOOTER_LINK]] -->
-		</div> 
+
+	<div style="width: 1000px; text-align: center; margin: auto; padding-top: 30px;">
+		<div style="float: left; text-transform: uppercase;">Formas de pagamento:</div><br>
+		<img src="/image/pagseguro-line.png" style="width: 100%;" width="100%">
 	</div>
+
+	  <div style="margin-left: 15px; margin-right: 15px; margin: auto; width: 1170px;">
+	  				<div style="width: 60%; padding-top: 25px; float: left; padding-bottom: 40px;">
+	  					<?php echo $powered; ?><!-- [[%FOOTER_LINK]] -->
+	  				</div>
+
+	  				<div style="width: 40%; float: left; padding-top: 20px; text-align: right;">
+
+	  					<a href="http://pagseguro.uol.com.br" target="_blank">
+	  						<img src="/image/pagseguro.png" alt="PagSeguro" height="26" style="border: 0px; margin-right: 20px; height: 26px;">
+	  					</a>
+
+	  					<a href="https://ssl.comodo.com" target="_blank">
+	  						<img src="https://ssl.comodo.com/images/comodo_secure_seal_76x26_transp.png" alt="SSL" width="76" height="26" style="border: 0px;">
+	  						<span style="font-weight:bold; font-size:7pt">SSL</span></a>
+	  					</div>
+	  	</div>
+
 </footer>
 <script src="catalog/view/theme/theme533/js/livesearch.js" type="text/javascript"></script>
 
