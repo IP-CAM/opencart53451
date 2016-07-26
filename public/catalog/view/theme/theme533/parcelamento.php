@@ -50,7 +50,7 @@ if ($tipo_de_calculo == 1) {
 }
 
 // Exibe as frases de parcelamento
-echo '<br /> ou <span class="webca">' . $qtd_parcelas . 'x </span> de <span class="webca">' . $moeda_da_loja . number_format($valor_parcela, 2, ',', '.');
+echo '<br /><br /> ou <span class="webca">' . $qtd_parcelas . 'x </span> de <span class="webca">' . $moeda_da_loja . number_format($valor_parcela, 2, ',', '.');
 
 if ($juros == 0) { echo '<br /></span>sem juros'; } else { echo '<br /></span>com juros de ' . $juros . '% ao m&ecirc;s'; }
 
