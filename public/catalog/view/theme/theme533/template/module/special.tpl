@@ -18,7 +18,7 @@ $(".specials-scroll").owlCarousel({
 	navigationText: ['<i class="fa fa-chevron-left fa-5x"></i>', '<i class="fa fa-chevron-right fa-5x"></i>'],
 	rewindNav : false,
 	scrollPerPage : false,
- 
+
 	//Pagination
 	pagination : false,
 	paginationNumbers: false,
@@ -38,7 +38,7 @@ $(".specials-scroll").owlCarousel({
 			closeClick	: false,
 			openEffect	: 'elastic',
 			closeEffect	: 'elastic',
-			
+
 		});
 });
 </script>
@@ -76,6 +76,7 @@ $(".specials-scroll").owlCarousel({
 										<?php } else { ?>
 										<span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
 										<?php } ?>
+										<?php include $_SERVER['DOCUMENT_ROOT'] . '/catalog/view/theme/theme533/parcelamento.php'; ?>
 										<?php if ($product['tax']) { ?>
 										<span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
 										<?php } ?>
@@ -97,7 +98,7 @@ $(".specials-scroll").owlCarousel({
 										<?php } ?>
 										<?php } ?>
 									</div>
-										
+
 								</div>
 								<div class="col-sm-12">
 									<div class="quickview_description description">
@@ -148,6 +149,7 @@ $(".specials-scroll").owlCarousel({
 								<?php echo $product['price']; ?>
 							</span>
 							<?php } ?>
+							<?php include $_SERVER['DOCUMENT_ROOT'] . '/catalog/view/theme/theme533/parcelamento.php'; ?>
 							<?php if ($product['tax']) { ?>
 							<span class="price-tax">
 								<?php echo $text_tax; ?> <?php echo $product['tax']; ?>

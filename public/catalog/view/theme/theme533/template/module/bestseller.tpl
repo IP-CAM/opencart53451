@@ -17,7 +17,7 @@ jQuery(document).ready(function() {
 		navigationText: ['<i class="fa fa-chevron-left fa-5x"></i>', '<i class="fa fa-chevron-right fa-5x"></i>'],
 		rewindNav : false,
 		scrollPerPage : false,
-	 
+
 		//Pagination
 		pagination : false,
 		paginationNumbers: false,
@@ -37,7 +37,7 @@ jQuery(document).ready(function() {
 			closeClick	: false,
 			openEffect	: 'elastic',
 			closeEffect	: 'elastic',
-			
+
 		});
 	});
 </script>
@@ -52,7 +52,7 @@ jQuery(document).ready(function() {
 			<div>
 				<div class="product-thumb transition" >
 				<div class="image"><a href="<?php echo $product['href']; ?>"><img alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive lazy" data-src="<?php echo $product['thumb']; ?>" src="image/catalog/preload.gif" /></a>
-				
+
 				<a class="quickview quickview-bestsellers" data-rel="details" href="#quickview_bestsellers_<?php echo $z?>">
 					<?php echo $text_quick; ?>
 				</a>
@@ -80,14 +80,15 @@ jQuery(document).ready(function() {
 										<?php } else { ?>
 										<span class="price-new"><?php echo $product['special']; ?></span><span class="price-old"><?php echo $product['price']; ?></span>
 										<?php } ?>
+										<?php include $_SERVER['DOCUMENT_ROOT'] . '/catalog/view/theme/theme533/parcelamento.php'; ?>
 										<?php if ($product['tax']) { ?>
 										<span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
 										<?php } ?>
 										</div>
 										<?php } ?>
-									</div>									
+									</div>
 									<div class="clear"></div>
-									<div class="cart-button">										
+									<div class="cart-button">
 										<button class="btn btn-icon" type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>
 										<button class="btn btn-icon" type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-signal"></i></button>
 										<button class="btn btn-add" type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');"><span><?php echo $button_cart; ?></span></button>
@@ -104,7 +105,7 @@ jQuery(document).ready(function() {
 										<?php } ?>
 									</div>
 									<?php } ?>
-									
+
 								</div>
 								<div class="col-sm-12">
 									<div class="quickview_description description"><?php echo $product['description1'];?></div>
@@ -112,7 +113,7 @@ jQuery(document).ready(function() {
 						</div>
 					</div>
 				</div>
-				
+
 				</div>
 				<div class="caption">
 				<div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
@@ -138,12 +139,12 @@ jQuery(document).ready(function() {
 					<span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
 					<?php } ?>
 					</div>
-				<?php } ?>					
+				<?php } ?>
 					<button class="btn btn-add" type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');"><span><?php echo $button_cart; ?></span></button>
 				</div>
 					<div class="clear"></div>
 				</div>
-			</div>			
+			</div>
 			<?php } ?>
 			</div>
 		</div>
